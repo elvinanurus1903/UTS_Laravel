@@ -13,31 +13,22 @@
 @section('main')
 
 <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4 movie_list">
-                    <div class="pt-8 pb-2 mb-3 border-bottom">
- 
- 
-                        <div class="row">
-	 <div class="card-detail2">
-	 	<center>
 	 	<div class="card-detailfilmawal">
 <img src="{{asset('/images/film.jpg')}}" alt="Los Angeles">
-</div>
 <hr>
+<center>
 <p>
 Website Cinema21 menyajikan film, Drama, anime, dan Acara populer dengan subtitle Bahasa Indonesia.
 <br>
 Website ini menyediakan data film lengkap seperti Pemain dan Sinopsis Film tersebut.
 </p>
+</center>
 <hr>
-<div class="form-group">
+<center>
                 <button type="submit" class="btn btn-dark">
                 	<a href="{{ route('front.index') }}">Movie List</a></button>
-              </div>
-
-</div>
-
-
 </center>
+</div>
 </div></div></div>
 </main>
 
