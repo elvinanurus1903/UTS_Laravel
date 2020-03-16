@@ -12,18 +12,14 @@
 @section('main')
 <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4 movie_list">
                     <div class="pt-8 pb-2 mb-3 border-bottom">
- 
-                        <div class="row">
+                    <div class="row">
                             <h1>Movies</h1>
-
                         </div>
- 
-                        <div class="row">
- 
-                            <!-- Movie Card Start -->
+                    <div class="row">
+                    <!-- Movie Card Start -->
                              @foreach($film as $row)
                               <a href="{{route('front.show', $row->id)}}">
-                            <div class="card-view">
+                                <div class="card-view">
                                 <div class="card-header"><img src="{{ URL::to('/') }}/images/{{ $row->image }}" height="100" width="50" />
                                 </div>
                                 <br>
@@ -47,23 +43,13 @@
                                     </div>
                                 </div>
                             </div>
-                          </a>
+                             </a>
                             @endforeach
                             {!! $film->appends(request()->except('page'))->render() !!}
                             <!-- Movie Card End -->
                         </div>
-
-
                     </div>
- 
                 </main>
-                         
-
-
-      </div>
- 
-    </main>
-  </div>
   @endsection
 </body>
 </html>

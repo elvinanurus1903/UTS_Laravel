@@ -1,7 +1,5 @@
-
-
-   @extends('User.home')
-   @section('title', ' Daftar Akun')
+@extends('User.home')
+ @section('title', ' Daftar Akun')
 <body>
    
 @section('main')
@@ -27,6 +25,5 @@
 </div>
 @endsection
 </body>
-</html>
 
            

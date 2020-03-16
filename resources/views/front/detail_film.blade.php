@@ -7,13 +7,12 @@
 <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" >
 <link rel="stylesheet" type="text/css" href="{{ asset('/assets/film.css') }}" media="all">
 </head>
-
+<body>
 @section('title', 'Movie Detail')
 @section('main')
 
 <main class="movie_list">
-    
- <div class="card-detail">
+    <div class="card-detail">
     <div class="card-detailfilm">
     <img src="{{ URL::to('/') }}/images/{{ $film->image }}" width="350" height="550" />
        </div> 
@@ -48,11 +47,11 @@
             </tr>
         </table>
         <hr>
-{{ $film->sinopsis }}
-</div>
+        {{ $film->sinopsis }}
+        </div>
     </div>   
- </div>
-             </main>
+    </div>
+</main>
   @endsection
 </body>
 </html>

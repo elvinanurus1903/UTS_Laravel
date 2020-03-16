@@ -25,23 +25,18 @@
             <a href="index.html">St</a>
           </div>
           <ul class="sidebar-menu">
-            
               <li class="menu-header">Halaman Awal</li>
               <li class="nav-item dropdown ">
                 <a href="{{ route('film.index') }}"  ><i class="fas fa-fire"></i><span>Lihat Data</span></a>
-            
               </li>
               <li class="menu-header">Starter</li>
               <li class="nav-item dropdown ">
                 <a href="{{route('film.create')}}"  ><i class="fas fa-columns"></i> <span>Tambah Data</span></a>
               </li>
-              
-          
               <li class="menu-header">Akun</li>
               <li class="nav-item dropdown">
                 <a href="#" ><i class="far fa-user"></i> <span>Akun Saya</span></a>
               </li>
-             
               <br>
               <br>
               <br>
@@ -55,8 +50,5 @@
             </div>
         </aside>
       </div>
-
-      @yield('sidebar')
-
-    </body>
-    </html>
+</body>
+</html>
